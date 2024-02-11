@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Assessment Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>House Assessment Tool</h1>
+      <form id="assessmentForm">
+        <div class="form-group">
+          <label for="imageUpload">Upload House Image:</label>
+          <input type="file" id="imageUpload" accept="image/*" required />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" rows="4" cols="50" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="assessmentResults" class="hidden">
+        <h2>Assessment Results:</h2>
+        <div id="immediateConcerns"></div>
+        <div id="recommendations"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
